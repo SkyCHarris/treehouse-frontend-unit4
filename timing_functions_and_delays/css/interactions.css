@@ -7,6 +7,7 @@
 	transition-property: opacity;
 	transition-duration: .5s;
 }
+
 .photo-overlay:hover {
 	opacity: 1;
 }
@@ -17,9 +18,7 @@
 
 .button {
 	opacity: 0;
-	transition-property: opacity, background, box-shadow;
-	transition-duration: .5s;
-	transition-delay: .2s, .3s, 0s;
+	transition: .5s;
 }
 
 .button:hover {
@@ -29,4 +28,16 @@
 
 .photo-overlay:hover .button {
 	opacity: 1;
+}
+
+.btn-icon {
+	transition-property: opacity, left;
+	transition-duration: .5s;
+	transition-delay: .3s;
+	transition-timing-function: ease-out,;
+}
+
+.button:hover .btn-icon {
+	opacity: 1;
+	left: 80%;
 }
