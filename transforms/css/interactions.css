@@ -34,7 +34,7 @@ img {
 }
 
 img:hover {
-	transform: rotate(-5deg);
+	transform: translateX(150px);
 }
 
 /* -- Row 2 --------- */
