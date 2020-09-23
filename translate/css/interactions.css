@@ -33,7 +33,7 @@ img {
 }
 
 img:hover {
-	transform: translate(100px, 50px);
+	transform: rotate(-5deg) scale(1.1) translateY(-20px);
 }
 
 /* -- Row 2 --------- */
@@ -42,7 +42,22 @@ img:hover {
 
 /* -- Row 3 --------- */
 
+.slide .photo-overlay,
+.slide img {
+	transition: transform .6s ease-out;
+}
 
+.photo-overlay {
+	transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+	transform: translateX(0);
+}
+
+.slide:hover img {
+	transform: translateX(100%);
+}
 
 /* -- Logo ---------- */
 
