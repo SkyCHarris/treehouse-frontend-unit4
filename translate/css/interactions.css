@@ -29,7 +29,7 @@
 /* -- Row 1 --------- */
 
 img {
-	transition: transform .5s;
+	transition: transform .5s cubic-bezier(.73,-0.35,.28,1.39);
 }
 
 img:hover {
